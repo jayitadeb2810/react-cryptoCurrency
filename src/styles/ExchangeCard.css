@@ -1,0 +1,37 @@
+.exchangeCardContainer{
+    /* width: 100%; */
+    display: flex;
+    background-color: blueviolet;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+.exchangeCard{
+    width:130px;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    
+    /* height: 160px; */
+    background-color: pink;
+    margin: 20px;
+}
+.pageChangebutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: auto ; */
+}
+.pageChangebutton button{
+    padding: 10px;
+    background-color: seagreen;
+    margin: 8px;
+}
+.radioButton input{
+    margin: 10px;
+}
+.pricechange{
+    display: flex;
+    flex-direction: row;
+}

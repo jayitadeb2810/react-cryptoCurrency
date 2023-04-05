@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Header from "./components/Header";
+import Home from './components/Home';
+import Coins from './components/Coins';
+import Exchanges from './components/Exchanges';
+import CoinDetails from './components/CoinDetails';
+import Loader from './components/Loader';
+import './styles/Header.css';
+import './styles/App.css';
+import './styles/ExchangeCard.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/Coins' element={<Coins />} />
+        
+        <Route path='/Exchanges' element={<Exchanges />} />
+        <Route path='/Coin/:id3' element={<CoinDetails />} />
+        <Route path='/*' element={<div>Page Not Found 404</div> }/>
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+export const server = 'https://api.coingecko.com/api/v3'

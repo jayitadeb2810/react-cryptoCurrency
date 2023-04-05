@@ -1,0 +1,22 @@
+
+.heading{
+    background-color: rgb(233, 223, 223);
+    width: 100vw;
+    height: 70px;
+    /* position: fixed; */
+}
+
+.heading nav{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    /* position:sticky; */
+    
+    
+}
+nav  a {
+    padding: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
