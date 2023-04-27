@@ -9,7 +9,7 @@ import '../styles/ExchangeCard.css'
 
 // import { Container } from '@chakra-ui/react';
 
-const Coins = () => {
+ const Coins = () => {
   const [coin, setCoin] = useState([])
   const [Loading, setLoading] = useState(true)
   const [errors, setErrors] = useState(false)
@@ -84,7 +84,7 @@ const pageChange = (pageNumber)=>{
     }
 }
 
-const CoinCard =({id3,  name, image,  symbol, price, currecy_symbol= "₹"})=>{
+export const CoinCard =({id3,  name, image,  symbol, price, currecy_symbol= "₹"})=>{
   return (
   <>
       
